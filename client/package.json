@@ -2,7 +2,7 @@
   "name": "moviestore-client",
   "version": "0.1.0",
   "private": true,
-  "author": "charan",
+  "author": "ANTHONY",
   "license": "MIT",
   "dependencies": {
     "@date-io/moment": "1.3.11",
@@ -20,7 +20,7 @@
     "jspdf": "^1.5.3",
     "material-ui": "^0.20.2",
     "moment": "2.24.0",
-    "node-sass": "^4.13.0",
+    "sass": "^1.77.6",
     "react": "16.11.0",
     "react-chartjs-2": "^2.8.0",
     "react-dom": "16.11.0",

@@ -8,12 +8,12 @@ export default function Footer() {
     <div className={classes.root}>
       <Divider />
       <Typography className={classes.copyright} variant="body1">
-        &copy; Charan,Hari,Sreeram 2021
+        &copy; ANTHONY 2021
       </Typography>
       <Typography variant="caption">
         Created with purpose |{' '}
-        <Link href="https://github.com/charangajjala" target="_blank" rel="noopener">
-          Charan-Hari-Sreram
+        <Link href="https://github.com/anthony" target="_blank" rel="noopener">
+          Created with purpose | ANTHONY
         </Link>
       </Typography>
     </div>

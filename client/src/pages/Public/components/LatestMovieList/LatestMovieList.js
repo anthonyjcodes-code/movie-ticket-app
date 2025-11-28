@@ -5,7 +5,7 @@ import Container from '@material-ui/core/Container';
 
 import { Grid, GridList, Typography } from '@material-ui/core';
 import styles from './styles';
-import MovieCard from '../../pages/Public/MoviePage/components/MovieCard/MovieCard';
+import MovieCard from '../../components/MovieCard/MovieCard';
 
 const LatestMovieList = props => {
   const { classes, movies } = props;

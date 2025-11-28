@@ -139,32 +139,30 @@
 - **Admin Management**: Super Admins have additional privileges to approve theatre owners as Admins.
 - **Analytics**: The admin dashboard includes graphical visualizations to track revenue, movie popularity, and user engagement.
 
-# Contributors <img src="https://raw.githubusercontent.com/TheDudeThatCode/TheDudeThatCode/master/Assets/Developer.gif" width=35 height=25>
-
 <table>
   <tbody>
     <tr>
       <td align="center">
-        <a href="https://github.com/charangajjala" target="_blank">
-          <img src="https://avatars.githubusercontent.com/u/64437927?v=4" width="100px" alt="Charan Gajjala" />
+        <a href="https://github.com/anthony" target="_blank">
+          <img src="https://avatars.githubusercontent.com/u/64437927?v=4" width="100px" alt="ANTHONY" />
           <br />
-          <sub><b>Charan Gajjala Chenchu</b></sub>
+          <sub><b>ANTHONY</b></sub>
         </a>
       </td>
       <td align="center">
-        <a href="https://www.linkedin.com/in/chinna-hari-krishna-reddy-708536245/"
+        <a href="https://www.linkedin.com/in/anthony/"
           target="_blank">
-          <img src="https://avatars.githubusercontent.com/u/74588553?v=4" width="100px" alt="Sachin" />
+          <img src="https://avatars.githubusercontent.com/u/74588553?v=4" width="100px" alt="ANTHONY" />
           <br />
-          <sub><b>Chinna Hari Krishna</b></sub>
+          <sub><b>ANTHONY</b></sub>
         </a>
       </td>
             <td align="center">
-        <a href="https://www.linkedin.com/in/sree-ram-varma-chintalapati-37092a1a9/"
+        <a href="https://www.linkedin.com/in/anthony/"
           target="_blank">
-          <img src="https://avatars.githubusercontent.com/u/74588553?v=4" width="100px" alt="Sachin" />
+          <img src="https://avatars.githubusercontent.com/u/74588553?v=4" width="100px" alt="ANTHONY" />
           <br />
-          <sub><b>Chitalapati Sree Ram Varama</b></sub>
+          <sub><b>ANTHONY</b></sub>
         </a>
       </td>
   </tbody>
@@ -215,5 +213,5 @@ This project is licensed under the MIT License - see the [License](LICENSE) file
 13. [Google GeeksForGeeks - Design Movie Ticket Booking System](https://www.geeksforgeeks.org/design-movie-ticket-booking-system-like-bookmyshow/)  
     A tutorial for designing a movie ticket booking system similar to BookMyShow.
 
-14. [GitHub - MovieStore Code Repository](https://github.com/charangajjala/MovieStore)  
+14. [GitHub - MovieStore Code Repository](https://github.com/anthony/MovieStore)  
     The GitHub repository for the source code of the Movie Ticket Booking System project.

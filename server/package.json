@@ -6,9 +6,9 @@
   "scripts": {
     "start": "node src/index.js",
     "dev": "nodemon src/index.js",
-    "database": "/Users/georgesimos/mongodb/bin/mongod --dbpath=/Users/georgesimos//mongodb-data"
+    "database": "/Users/anthony/mongodb/bin/mongod --dbpath=/Users/anthony//mongodb-data"
   },
-  "author": "charan",
+  "author": "ANTHONY",
   "license": "MIT",
   "dependencies": {
     "bcryptjs": "^2.4.3",

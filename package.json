@@ -11,12 +11,12 @@
   },
   
   "keywords": [],
-  "author": "Charan",
+  "author": "ANTHONY",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/georgesimos/cinema-plus/issues"
+    "url": "https://github.com/anthony/cinema-plus/issues"
   },
-  "homepage": "https://github.com/georgesimos/cinema-plus#readme",
+  "homepage": "https://github.com/anthony/cinema-plus#readme",
   "devDependencies": {
     "eslint": "^6.1.0",
     "eslint-config-airbnb": "^18.0.1",
